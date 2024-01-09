@@ -31,6 +31,7 @@ public class binary_search {
         int key = 101;
 
         int numbers[] = { 2, 10, 25, 35, 47, 98, 101, 801 };
+        
         System.out.println("Index of key is :" + binaryy_search(numbers, key));
 
     }

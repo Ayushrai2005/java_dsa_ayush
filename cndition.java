@@ -1,5 +1,5 @@
 import java.util.*;
-
+//code to check income tax 
 public class cndition {
     public static void main(String[] args) {
         System.out.println("Enter any number");

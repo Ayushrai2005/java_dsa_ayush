@@ -1,5 +1,5 @@
 import java.util.*;
-
+//code to get some og first n numbers  enter by user
 public class loop_2 {
     public static void main(String[] args) {
         int i = 1;

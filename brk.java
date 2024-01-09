@@ -1,5 +1,6 @@
 import java.util.*;
 public class brk {
+    //implementation of break ...
     public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
         
@@ -12,13 +13,6 @@ public class brk {
         }
             System.out.println(n);
         }while(true );
-   
-
-   
-    int x, y, z;
-    x=y=z=2 ;
-    x+=y ; y-=z ; z/=(x+y);
-    System.out.println(x  + " " +  y + " "+ z );
 
     }
 }  

@@ -25,7 +25,7 @@ public class prefix_subarray {
                 }
             }
         }
-        System.out.println("maximum " + maxSum);
+        System.out.println("maximum of subarray " + maxSum);
 
         System.out.println("Total subarrays : " + numbers.length * (numbers.length + 1) / 2); // it also gives total
                                                                                               // numbers of pairs
@@ -41,4 +41,4 @@ public class prefix_subarray {
 
     }
 }
-// timecomplexity for this is O(n^3)
+// timecomplexity for this is O(n^2)

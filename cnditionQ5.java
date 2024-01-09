@@ -1,5 +1,6 @@
 
 import java.util.*;
+//code to check leap year or not 
 
 public class cnditionQ5 {
     public static void main(String[] args) {

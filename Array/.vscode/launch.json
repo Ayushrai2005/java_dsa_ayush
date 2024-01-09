@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "trpng_rainWater",
+      "request": "launch",
+      "mainClass": "trpng_rainWater",
+      "projectName": "Array_aed6ff93"
+    },
+    {
+      "type": "java",
       "name": "max_subarraySum",
       "request": "launch",
       "mainClass": "max_subarraySum",
