@@ -2,7 +2,7 @@ public class Compare_to {
 
     public static void main(String[] args) {
 
-        String fruits[] = {"mango" , "apple" , "banana" };
+        String fruits[] = {"apple" ,  "mango" , "nanana" };
 
         String largest =fruits[0];
 

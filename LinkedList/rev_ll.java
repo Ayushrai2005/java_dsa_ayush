@@ -180,56 +180,81 @@ public class rev_ll {
         head = prev;
     }
 
-
-    public void deleteNthfromEnd(int n){
-        //calculate size
-        int sz = 0 ;
-        Node temp = head ;
-        while(temp!= null){
-            temp = temp.next ;
-            sz++ ;
+    public void deleteNthfromEnd(int n) {
+        // calculate size
+        int sz = 0;
+        Node temp = head;
+        while (temp != null) {
+            temp = temp.next;
+            sz++;
         }
 
-        if(n==sz){
-            head = head.next ;//remove first
-            return ;    
+        if (n == sz) {
+            head = head.next;// remove first
+            return;
         }
 
-        //sz-n
-        int i = 1 ;
-        int iToFind = sz-n ;        //index to find 
-        Node prev = head ;
-        
-        while(i<iToFind){
-            prev= prev.next ;
-            i++ ;
+        // sz-n
+        int i = 1;
+        int iToFind = sz - n; // index to find
+        Node prev = head;
+
+        while (i < iToFind) {
+            prev = prev.next;
+            i++;
         }
 
-        prev.next = prev.next.next ;
-        return ;
-    
+        prev.next = prev.next.next;
+        return;
+
+    }
+
+    // detect loop/cycle
+    public static boolean isCycle() {
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+
+            if (slow == fast) {
+                return true;
+            }
+        }
+
+        return false;
+
     }
 
     public static void main(String[] args) {
 
         rev_ll ll = new rev_ll();
-        ll.addFirst(2);
-        ll.addFirst(1);
+        // ll.addFirst(2);
+        // ll.addFirst(1);
 
-        ll.addLast(3);
-        ll.addLast(4);
+        // ll.addLast(3);
+        // ll.addLast(4);
 
-        ll.add(4, 5);
-        
+        // ll.add(4, 5);
 
-        System.out.println("Size of LL is : " + size);
+        // System.out.println("Size of LL is : " + size);
 
-       // System.out.println(ll.recSearch(3));
-        ll.reverse();
-        ll.printLL();
+        // // System.out.println(ll.recSearch(3));
+        // ll.reverse();
+        // ll.printLL();
+
+        // ll.deleteNthfromEnd(3);
+        // ll.printLL();
+
+        head = new Node(1);
+        head.next = new Node(2);
+        head.next.next = new Node(3);
+        head.next.next.next = head;
+
+        System.out.println(isCycle());
 
 
-        ll.deleteNthfromEnd(3);
         ll.printLL();
 
     }

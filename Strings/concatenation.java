@@ -9,6 +9,8 @@ public class concatenation {
         String Fullname = Firstname + " " + Lastname ;
 
         System.out.println(Fullname);
+
+        System.out.println(Fullname.length());
     }
     
 }

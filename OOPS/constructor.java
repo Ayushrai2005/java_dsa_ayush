@@ -7,7 +7,7 @@ public class constructor {
         Student s1 = new Student();
         System.out.println();
     }
-}
+} 
 
 class Student {
     String name;

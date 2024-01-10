@@ -15,7 +15,8 @@ public class Char_At {
         String Lastname = "Rai";
 
         String Fullname = Firstname + " " + Lastname;
-        System.err.println(Fullname.charAt(0));
+        System.out.println(Fullname.charAt(0));
+        System.out.println(Firstname);
 
         // To get full letters
         printletters(Fullname);

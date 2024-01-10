@@ -10,7 +10,7 @@ public class Stringss{
         //Strings are Immutable in java 
 
 
-        //Class 3 { Input /output}
+        //Class 2 { Input /output}
         Scanner scnr = new Scanner( System.in) ;
         String name = scnr.nextLine() ;
         System.out.println(name);

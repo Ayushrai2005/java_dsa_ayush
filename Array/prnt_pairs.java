@@ -24,7 +24,7 @@ public class prnt_pairs {
     }
 
     public static void main(String[] args) {
-        int numbers[] = { 2, 4, 8, 6, 10 };
+        int numbers[] = { 2, 4, 6 , 8 , 10 };
 
         printPairs(numbers);
 
